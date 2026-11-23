@@ -40,15 +40,15 @@ def export(out: Path) -> None:
     pub["value"] = pub["value"].round(4)
     pub[["kpi", "level", "node", "month_start", "value"]].rename(
         columns={"kpi": "kpi_id", "month_start": "month"}
-    ).to_csv(out / "fact_kpi.csv", index=False)
+    ).to_csv(out / "fact_kpi.csv", index=False, float_format="%.10g")
     org = cells[["level", "node", "parent"]].drop_duplicates().sort_values(["level", "node"])
-    org.to_csv(out / "dim_org.csv", index=False)
+    org.to_csv(out / "dim_org.csv", index=False, float_format="%.10g")
     cells[["month_start"]].drop_duplicates().rename(columns={"month_start": "month"}).sort_values("month").to_csv(
         out / "dim_month.csv", index=False
     )
     pd.DataFrame(
         [{k: v for k, v in kpi.items() if k in ("id", "name", "owner", "definition", "unit")} for kpi in catalogue]
-    ).rename(columns={"id": "kpi_id"}).to_csv(out / "dim_kpi.csv", index=False)
+    ).rename(columns={"id": "kpi_id"}).to_csv(out / "dim_kpi.csv", index=False, float_format="%.10g")
     dax = [
         "-- Generated from config/kpis.yml by `python -m paf.cli report`. Do not edit.",
         "-- One value per KPI, org node and month, already privacy-checked by the platform.",

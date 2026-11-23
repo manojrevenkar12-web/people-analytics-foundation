@@ -12,6 +12,7 @@ from typing import Any
 import numpy as np
 
 from paf.lab import simulate
+from paf.lab.tidy import tidy
 
 ROOT = simulate.ROOT
 CONFIG = simulate.CONFIG
@@ -200,7 +201,7 @@ def write(name: str, summary: dict) -> Path:
     REPORTS.mkdir(exist_ok=True)
     summary["gates"] = judge(summary)
     path = REPORTS / f"{name}.json"
-    path.write_text(json.dumps(summary, indent=1, sort_keys=True, default=float) + "\n")
+    path.write_text(json.dumps(tidy(summary), indent=1, sort_keys=True, default=float) + "\n")
     return path
 
 

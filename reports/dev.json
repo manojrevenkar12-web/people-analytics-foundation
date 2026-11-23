@@ -2,8 +2,8 @@
  "config_hash": "7bec1950107c5b83",
  "designs": {
   "before_after": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -13,138 +13,138 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864232209737828,
-    "headcount": 0.9864232209737828,
+    "fte": 0.986423221,
+    "headcount": 0.986423221,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9900189482082308,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990636704119851,
-    "voluntary_turnover_12m": 0.9915730337078652
+    "underpaid_share": 0.9990636704,
+    "voluntary_turnover_12m": 0.9915730337
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9941877617844558,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9941877618,
    "kpi_wrong_cells": 99,
    "label": "Pilot read out before/after instead of randomised",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 0,
-    "error": 3.3576000297991277,
-    "estimate": -7.450576612190549,
+    "error": 3.35760003,
+    "estimate": -7.450576612,
     "per_seed": [
      {
       "ci": [
-       -8.006182332546086,
-       -6.027795161381389
+       -8.006182333,
+       -6.027795161
       ],
-      "estimate": -7.0151152882205485,
-      "true_effect": -10.453015873015872
+      "estimate": -7.015115288,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -9.44178219239917,
-       -7.432771384138714
+       -9.441782192,
+       -7.432771384
       ],
-      "estimate": -8.433538516179514,
-      "true_effect": -11.554114052953157
+      "estimate": -8.433538516,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -7.884316353133688,
-       -5.786523938478027
+       -7.884316353,
+       -5.786523938
       ],
-      "estimate": -6.903076032171582,
-      "true_effect": -10.417399999999999
+      "estimate": -6.903076032,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 2,
-    "error": -0.6315364205949878,
-    "estimate": -5.609224553010208,
+    "error": -0.6315364206,
+    "estimate": -5.609224553,
     "per_seed": [
      {
       "ci": [
-       -5.644790004124873,
-       -3.6813717759334303
+       -5.644790004,
+       -3.681371776
       ],
-      "estimate": -4.66173767752715,
-      "true_effect": -4.755952380952381
+      "estimate": -4.661737678,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -7.698255330537603,
-       -5.774468466132394
+       -7.698255331,
+       -5.774468466
       ],
-      "estimate": -6.731566008313125,
-      "true_effect": -5.395112016293279
+      "estimate": -6.731566008,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.408088479335499,
-       -4.346409675252476
+       -6.408088479,
+       -4.346409675
       ],
-      "estimate": -5.434369973190348,
+      "estimate": -5.434369973,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 3,
-    "error": 0.001657996366559494,
-    "estimate": -0.014350193376864466,
+    "error": 0.001657996367,
+    "estimate": -0.01435019338,
     "per_seed": [
      {
       "ci": [
-       -0.02985723128726698,
-       0.010868119572392003
+       -0.02985723129,
+       0.01086811957
       ],
-      "estimate": -0.008458646616541353,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.008458646617,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.03778943016318047,
-       -0.002000529474429017
+       -0.03778943016,
+       -0.002000529474
       ],
-      "estimate": -0.019101316892068128,
-      "true_effect": -0.010183299389002037
+      "estimate": -0.01910131689,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.0356534739684974,
-       0.003808231404691224
+       -0.03565347397,
+       0.003808231405
       ],
-      "estimate": -0.015490616621983913,
+      "estimate": -0.01549061662,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.7302410073165844,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.730241007,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
   "model_alone": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.29267400510781366,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.2926740051,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -154,138 +154,138 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.7991849751948973,
+   "exit_accuracy": 0.7991849752,
    "exit_by_model": 1.0,
    "exit_minutes": 0.0,
-   "exit_share_error": 0.14479978738483346,
+   "exit_share_error": 0.1447997874,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864232209737828,
-    "headcount": 0.9864232209737828,
+    "fte": 0.986423221,
+    "headcount": 0.986423221,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9900189482082308,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990636704119851,
-    "voluntary_turnover_12m": 0.9915730337078652
+    "underpaid_share": 0.9990636704,
+    "voluntary_turnover_12m": 0.9915730337
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9941877617844558,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9941877618,
    "kpi_wrong_cells": 99,
    "label": "Same data, AI without guardrails (no sensitive-topic rule, no checks)",
-   "manual_wrong_rate": 0.029342783866205452,
+   "manual_wrong_rate": 0.02934278387,
    "people_minutes_saved_share": 1.0,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": 0.046890350077080235,
-    "estimate": -17.235180821379505,
+    "error": 0.04689035008,
+    "estimate": -17.23518082,
     "per_seed": [
      {
       "ci": [
-       -18.289019683158124,
-       -16.190816173126482
+       -18.28901968,
+       -16.19081617
       ],
-      "estimate": -17.19286307053942,
-      "true_effect": -17.04611111111111
+      "estimate": -17.19286307,
+      "true_effect": -17.04611111
      },
      {
       "ci": [
-       -18.259643362450785,
-       -16.329969320604636
+       -18.25964336,
+       -16.32996932
       ],
-      "estimate": -17.288153846153847,
-      "true_effect": -17.399022403258655
+      "estimate": -17.28815385,
+      "true_effect": -17.3990224
      },
      {
       "ci": [
-       -18.195996931105338,
-       -16.185887453874535
+       -18.19599693,
+       -16.18588745
       ],
-      "estimate": -17.224525547445257,
+      "estimate": -17.22452555,
       "true_effect": -17.40108
      }
     ],
     "seeds": 3,
-    "true_effect": -17.28207117145659
+    "true_effect": -17.28207117
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.1944009650069448,
-    "estimate": -12.09462953428032,
+    "error": -0.194400965,
+    "estimate": -12.09462953,
     "per_seed": [
      {
       "ci": [
-       -13.352624884366326,
-       -11.789693923650328
+       -13.35262488,
+       -11.78969392
       ],
-      "estimate": -12.560165975103734,
-      "true_effect": -12.27579365079365
+      "estimate": -12.56016598,
+      "true_effect": -12.27579365
      },
      {
       "ci": [
-       -12.104717382668406,
-       -10.827003864514662
+       -12.10471738,
+       -10.82700386
       ],
       "estimate": -11.45,
-      "true_effect": -11.382892057026476
+      "true_effect": -11.38289206
      },
      {
       "ci": [
-       -12.996300549666275,
-       -11.51286444503452
+       -12.99630055,
+       -11.51286445
       ],
-      "estimate": -12.273722627737227,
+      "estimate": -12.27372263,
       "true_effect": -12.042
      }
     ],
     "seeds": 3,
-    "true_effect": -11.900228569273375
+    "true_effect": -11.90022857
    },
    "pilot_wrong": {
     "covered_seeds": 3,
-    "error": -0.0030716806662226537,
-    "estimate": 0.2602595405753856,
+    "error": -0.003071680666,
+    "estimate": 0.2602595406,
     "per_seed": [
      {
       "ci": [
-       0.1987169880289392,
-       0.31838378675884454
+       0.198716988,
+       0.3183837868
       ],
-      "estimate": 0.2554312670589906,
-      "true_effect": 0.2777777777777778
+      "estimate": 0.2554312671,
+      "true_effect": 0.2777777778
      },
      {
       "ci": [
-       0.1819801548099324,
-       0.29903035068643996
+       0.1819801548,
+       0.2990303507
       ],
-      "estimate": 0.23906093906093906,
-      "true_effect": 0.23421588594704684
+      "estimate": 0.2390609391,
+      "true_effect": 0.2342158859
      },
      {
       "ci": [
-       0.22610433253594556,
-       0.34601297787688595
+       0.2261043325,
+       0.3460129779
       ],
-      "estimate": 0.28628641560622703,
+      "estimate": 0.2862864156,
       "true_effect": 0.278
      }
     ],
     "seeds": 3,
-    "true_effect": 0.2633312212416082
+    "true_effect": 0.2633312212
    },
-   "retention_mae": 1.7302410073165844,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.730241007,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 334,
    "tickets": 1495
   },
   "naive_forecast": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -295,138 +295,138 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 2.3333333333333335,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 2.333333333,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864232209737828,
-    "headcount": 0.9864232209737828,
+    "fte": 0.986423221,
+    "headcount": 0.986423221,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9900189482082308,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990636704119851,
-    "voluntary_turnover_12m": 0.9915730337078652
+    "underpaid_share": 0.9990636704,
+    "voluntary_turnover_12m": 0.9915730337
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9941877617844558,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9941877618,
    "kpi_wrong_cells": 99,
    "label": "Trailing averages instead of the forecasts",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.4644588678926101,
-    "estimate": -5.4421470003078305,
+    "error": -0.4644588679,
+    "estimate": -5.442147,
     "per_seed": [
      {
       "ci": [
-       -6.891605033945424,
-       -4.0632441395896635
+       -6.891605034,
+       -4.06324414
       ],
-      "estimate": -5.5411545682596275,
-      "true_effect": -4.755952380952381
+      "estimate": -5.541154568,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -6.652203803295816,
-       -4.144415723247186
+       -6.652203803,
+       -4.144415723
       ],
-      "estimate": -5.4673160173160165,
-      "true_effect": -5.395112016293279
+      "estimate": -5.467316017,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.738948962140865,
-       -3.878279774226839
+       -6.738948962,
+       -3.878279774
       ],
-      "estimate": -5.317970415347847,
+      "estimate": -5.317970415,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.857142857142857,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.857142857,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
   "no_identity": {
-   "analyst_hours_month": 23.17185185185185,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 23.17185185,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 21,
     "exit_never_recorded": 184,
@@ -435,272 +435,272 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.8972185901745107,
-    "headcount": 0.8972185901745107,
-    "hires": 0.9717462598116589,
-    "new_hire_exits_90d": 0.98749344384608,
-    "open_reqs": 0.9900189482082308,
+    "fte": 0.8972185902,
+    "headcount": 0.8972185902,
+    "hires": 0.9717462598,
+    "new_hire_exits_90d": 0.9874934438,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9888779311856234,
-    "voluntary_turnover_12m": 0.98646754426789
+    "underpaid_share": 0.9888779312,
+    "voluntary_turnover_12m": 0.9864675443
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.8958333333333334,
-   "kpi_correct": 0.9648801634585631,
+   "kpi_company_correct": 0.8958333333,
+   "kpi_correct": 0.9648801635,
    "kpi_wrong_cells": 585,
    "label": "No identity linking across the two HRIS",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.4644588678926101,
-    "estimate": -5.4421470003078305,
+    "error": -0.4644588679,
+    "estimate": -5.442147,
     "per_seed": [
      {
       "ci": [
-       -6.891605033945424,
-       -4.0632441395896635
+       -6.891605034,
+       -4.06324414
       ],
-      "estimate": -5.5411545682596275,
-      "true_effect": -4.755952380952381
+      "estimate": -5.541154568,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -6.652203803295816,
-       -4.144415723247186
+       -6.652203803,
+       -4.144415723
       ],
-      "estimate": -5.4673160173160165,
-      "true_effect": -5.395112016293279
+      "estimate": -5.467316017,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.738948962140865,
-       -3.878279774226839
+       -6.738948962,
+       -3.878279774
       ],
-      "estimate": -5.317970415347847,
+      "estimate": -5.317970415,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.761371493521426,
-   "retention_naive_mae": 1.8523809523809522,
-   "review_hours": 608.4666666666667,
+   "retention_mae": 1.761371494,
+   "retention_naive_mae": 1.852380952,
+   "review_hours": 608.4666667,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
   "no_quality": {
    "analyst_hours_month": 6.27,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {},
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.7584488264275677,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.758448826,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.1930222730067046,
-    "headcount": 0.18647750342338623,
-    "hires": 0.8179628707414945,
-    "new_hire_exits_90d": 0.9819227030094462,
-    "open_reqs": 0.867133172993328,
+    "fte": 0.193022273,
+    "headcount": 0.1864775034,
+    "hires": 0.8179628707,
+    "new_hire_exits_90d": 0.981922703,
+    "open_reqs": 0.867133173,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.4893299000086491,
-    "voluntary_turnover_12m": 0.3054531494347719
+    "underpaid_share": 0.4893299,
+    "voluntary_turnover_12m": 0.3054531494
    },
    "kpi_cells": 16032,
    "kpi_company_correct": 0.46875,
-   "kpi_correct": 0.6051626965772227,
+   "kpi_correct": 0.6051626966,
    "kpi_wrong_cells": 6320,
    "label": "No payroll and ATS checks",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.4644588678926101,
-    "estimate": -5.4421470003078305,
+    "error": -0.4644588679,
+    "estimate": -5.442147,
     "per_seed": [
      {
       "ci": [
-       -6.891605033945424,
-       -4.0632441395896635
+       -6.891605034,
+       -4.06324414
       ],
-      "estimate": -5.5411545682596275,
-      "true_effect": -4.755952380952381
+      "estimate": -5.541154568,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -6.652203803295816,
-       -4.144415723247186
+       -6.652203803,
+       -4.144415723
       ],
-      "estimate": -5.4673160173160165,
-      "true_effect": -5.395112016293279
+      "estimate": -5.467316017,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.738948962140865,
-       -3.878279774226839
+       -6.738948962,
+       -3.878279774
       ],
-      "estimate": -5.317970415347847,
+      "estimate": -5.317970415,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.8554298958206286,
-   "retention_naive_mae": 1.8476190476190475,
+   "retention_mae": 1.855429896,
+   "retention_naive_mae": 1.847619048,
    "review_hours": 0.0,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
   "no_sensitive_rule": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -710,138 +710,138 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864232209737828,
-    "headcount": 0.9864232209737828,
+    "fte": 0.986423221,
+    "headcount": 0.986423221,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9900189482082308,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990636704119851,
-    "voluntary_turnover_12m": 0.9915730337078652
+    "underpaid_share": 0.9990636704,
+    "voluntary_turnover_12m": 0.9915730337
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9941877617844558,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9941877618,
    "kpi_wrong_cells": 99,
    "label": "Assistant without the sensitive-topic rule",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.36343873492026935,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.3634387349,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.5119246623605239,
-    "estimate": -4.82032927878958,
+    "error": -0.5119246624,
+    "estimate": -4.820329279,
     "per_seed": [
      {
       "ci": [
-       -6.316076365076696,
-       -3.2427539290260907
+       -6.316076365,
+       -3.242753929
       ],
-      "estimate": -4.845337077765331,
+      "estimate": -4.845337078,
       "true_effect": -4.0
      },
      {
       "ci": [
-       -6.242644750564507,
-       -3.4957705134823223
+       -6.242644751,
+       -3.495770513
       ],
-      "estimate": -4.934848484848484,
-      "true_effect": -4.845213849287169
+      "estimate": -4.934848485,
+      "true_effect": -4.845213849
      },
      {
       "ci": [
-       -6.214653964456596,
-       -3.145248598771239
+       -6.214653964,
+       -3.145248599
       ],
-      "estimate": -4.680802273754926,
+      "estimate": -4.680802274,
       "true_effect": -4.08
      }
     ],
     "seeds": 3,
-    "true_effect": -4.308404616429057
+    "true_effect": -4.308404616
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.7302410073165844,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.730241007,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 334,
    "tickets": 1495
   },
   "platform": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -851,138 +851,138 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 0,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864232209737828,
-    "headcount": 0.9864232209737828,
+    "fte": 0.986423221,
+    "headcount": 0.986423221,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9900189482082308,
+    "open_reqs": 0.9900189482,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990636704119851,
-    "voluntary_turnover_12m": 0.9915730337078652
+    "underpaid_share": 0.9990636704,
+    "voluntary_turnover_12m": 0.9915730337
    },
    "kpi_cells": 16720,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9941877617844558,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9941877618,
    "kpi_wrong_cells": 99,
    "label": "people-analytics-foundation",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.4644588678926101,
-    "estimate": -5.4421470003078305,
+    "error": -0.4644588679,
+    "estimate": -5.442147,
     "per_seed": [
      {
       "ci": [
-       -6.891605033945424,
-       -4.0632441395896635
+       -6.891605034,
+       -4.06324414
       ],
-      "estimate": -5.5411545682596275,
-      "true_effect": -4.755952380952381
+      "estimate": -5.541154568,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -6.652203803295816,
-       -4.144415723247186
+       -6.652203803,
+       -4.144415723
       ],
-      "estimate": -5.4673160173160165,
-      "true_effect": -5.395112016293279
+      "estimate": -5.467316017,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.738948962140865,
-       -3.878279774226839
+       -6.738948962,
+       -3.878279774
       ],
-      "estimate": -5.317970415347847,
+      "estimate": -5.317970415,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.7302410073165844,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.730241007,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
   "small_groups_only": {
-   "analyst_hours_month": 6.384814814814814,
-   "assistant_wrong_rate": 0.013334594122781493,
+   "analyst_hours_month": 6.384814815,
+   "assistant_wrong_rate": 0.01333459412,
    "corrections": {
     "contractor_recorded_as_employee": 35,
     "exit_never_recorded": 19,
@@ -992,132 +992,132 @@
     "zombie_requisition_closed": 6
    },
    "disclosures": 165,
-   "exit_accuracy": 0.9556933616820222,
-   "exit_by_model": 0.6824415308291991,
-   "exit_minutes": 210.66666666666666,
-   "exit_share_error": 0.03646350106307584,
+   "exit_accuracy": 0.9556933617,
+   "exit_by_model": 0.6824415308,
+   "exit_minutes": 210.6666667,
+   "exit_share_error": 0.03646350106,
    "helpdesk_run": true,
-   "hiring_mae": 1.743985054667475,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 1.743985055,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.9864990689013036,
-    "headcount": 0.9864990689013036,
+    "fte": 0.9864990689,
+    "headcount": 0.9864990689,
     "hires": 1.0,
     "new_hire_exits_90d": 1.0,
-    "open_reqs": 0.9901514302636424,
+    "open_reqs": 0.9901514303,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.9990689013035382,
-    "voluntary_turnover_12m": 0.9916201117318435
+    "underpaid_share": 0.9990689013,
+    "voluntary_turnover_12m": 0.9916201117
    },
    "kpi_cells": 16984,
-   "kpi_company_correct": 0.9710648148148149,
-   "kpi_correct": 0.9942298226377039,
+   "kpi_company_correct": 0.9710648148,
+   "kpi_correct": 0.9942298226,
    "kpi_wrong_cells": 99,
    "label": "Hide small groups, but not their siblings",
-   "manual_wrong_rate": 0.029342783866205452,
-   "people_minutes_saved_share": 0.4195006938090001,
+   "manual_wrong_rate": 0.02934278387,
+   "people_minutes_saved_share": 0.4195006938,
    "pilot_hours": {
     "covered_seeds": 3,
-    "error": -0.1418191713489089,
-    "estimate": -10.949995813338584,
+    "error": -0.1418191713,
+    "estimate": -10.94999581,
     "per_seed": [
      {
       "ci": [
-       -12.532264612927934,
-       -9.842066433982685
+       -12.53226461,
+       -9.842066434
       ],
-      "estimate": -11.181684363315087,
-      "true_effect": -10.453015873015872
+      "estimate": -11.18168436,
+      "true_effect": -10.45301587
      },
      {
       "ci": [
-       -12.796272413003994,
-       -9.762887880565446
+       -12.79627241,
+       -9.762887881
       ],
-      "estimate": -11.361963369963373,
-      "true_effect": -11.554114052953157
+      "estimate": -11.36196337,
+      "true_effect": -11.55411405
      },
      {
       "ci": [
-       -11.898214967739703,
-       -8.665351778784764
+       -11.89821497,
+       -8.665351779
       ],
-      "estimate": -10.306339706737294,
-      "true_effect": -10.417399999999999
+      "estimate": -10.30633971,
+      "true_effect": -10.4174
      }
     ],
     "seeds": 3,
-    "true_effect": -10.808176641989675
+    "true_effect": -10.80817664
    },
    "pilot_minutes": {
     "covered_seeds": 3,
-    "error": -0.4644588678926101,
-    "estimate": -5.4421470003078305,
+    "error": -0.4644588679,
+    "estimate": -5.442147,
     "per_seed": [
      {
       "ci": [
-       -6.891605033945424,
-       -4.0632441395896635
+       -6.891605034,
+       -4.06324414
       ],
-      "estimate": -5.5411545682596275,
-      "true_effect": -4.755952380952381
+      "estimate": -5.541154568,
+      "true_effect": -4.755952381
      },
      {
       "ci": [
-       -6.652203803295816,
-       -4.144415723247186
+       -6.652203803,
+       -4.144415723
       ],
-      "estimate": -5.4673160173160165,
-      "true_effect": -5.395112016293279
+      "estimate": -5.467316017,
+      "true_effect": -5.395112016
      },
      {
       "ci": [
-       -6.738948962140865,
-       -3.878279774226839
+       -6.738948962,
+       -3.878279774
       ],
-      "estimate": -5.317970415347847,
+      "estimate": -5.317970415,
       "true_effect": -4.782
      }
     ],
     "seeds": 3,
-    "true_effect": -4.97768813241522
+    "true_effect": -4.977688132
    },
    "pilot_wrong": {
     "covered_seeds": 2,
-    "error": 0.012903118439779237,
-    "estimate": -0.0031050713036447214,
+    "error": 0.01290311844,
+    "estimate": -0.003105071304,
     "per_seed": [
      {
       "ci": [
-       -0.04749576012454695,
-       0.005303824933358127
+       -0.04749576012,
+       0.005303824933
       ],
-      "estimate": -0.022135272864963793,
-      "true_effect": -0.01984126984126984
+      "estimate": -0.02213527286,
+      "true_effect": -0.01984126984
      },
      {
       "ci": [
-       -0.011540527892927149,
-       0.026669642857142857
+       -0.01154052789,
+       0.02666964286
       ],
-      "estimate": 0.005294705294705295,
-      "true_effect": -0.010183299389002037
+      "estimate": 0.005294705295,
+      "true_effect": -0.01018329939
      },
      {
       "ci": [
-       -0.013329713896597487,
-       0.030668420421538427
+       -0.0133297139,
+       0.03066842042
       ],
-      "estimate": 0.007525353659324333,
+      "estimate": 0.007525353659,
       "true_effect": -0.018
      }
     ],
     "seeds": 3,
-    "true_effect": -0.016008189743423957
+    "true_effect": -0.01600818974
    },
-   "retention_mae": 1.7302410073165844,
-   "retention_naive_mae": 1.857142857142857,
-   "review_hours": 4.133333333333334,
+   "retention_mae": 1.730241007,
+   "retention_naive_mae": 1.857142857,
+   "review_hours": 4.133333333,
    "sensitive_read_by_model": 0,
    "tickets": 1495
   },
@@ -1125,31 +1125,31 @@
    "analyst_hours_month": 47.35,
    "corrections": {},
    "disclosures": 1656,
-   "exit_accuracy": 0.9227557287975431,
+   "exit_accuracy": 0.9227557288,
    "exit_by_model": 0.0,
    "exit_minutes": 496.0,
-   "exit_share_error": 0.06940113394755493,
+   "exit_share_error": 0.06940113395,
    "helpdesk_run": false,
-   "hiring_mae": 2.3333333333333335,
-   "hiring_naive_mae": 2.3333333333333335,
+   "hiring_mae": 2.333333333,
+   "hiring_naive_mae": 2.333333333,
    "kpi_by": {
-    "fte": 0.539983164983165,
-    "headcount": 0.537878787878788,
-    "hires": 0.9196127946127947,
-    "new_hire_exits_90d": 0.9844276094276094,
-    "open_reqs": 0.8863636363636364,
+    "fte": 0.539983165,
+    "headcount": 0.5378787879,
+    "hires": 0.9196127946,
+    "new_hire_exits_90d": 0.9844276094,
+    "open_reqs": 0.8863636364,
     "time_to_fill_median": 1.0,
-    "underpaid_share": 0.8051346801346803,
-    "voluntary_turnover_12m": 0.30976430976430974
+    "underpaid_share": 0.8051346801,
+    "voluntary_turnover_12m": 0.3097643098
    },
    "kpi_cells": 19008,
-   "kpi_company_correct": 0.5509259259259259,
-   "kpi_correct": 0.747895622895623,
+   "kpi_company_correct": 0.5509259259,
+   "kpi_correct": 0.7478956229,
    "kpi_wrong_cells": 4792,
    "label": "Spreadsheets: an export from each system, an analyst's definitions, every cell shared",
-   "manual_wrong_rate": 0.029342783866205452,
-   "retention_mae": 1.9190476190476191,
-   "retention_naive_mae": 1.9190476190476191,
+   "manual_wrong_rate": 0.02934278387,
+   "retention_mae": 1.919047619,
+   "retention_naive_mae": 1.919047619,
    "review_hours": 0.0,
    "sensitive_read_by_model": 0,
    "tickets": 1495
@@ -1157,31 +1157,31 @@
  },
  "exit_shares": {
   "model_alone": {
-   "career_growth": 0.10588235294117647,
-   "culture": 0.15294117647058825,
-   "manager": 0.3058823529411765,
-   "pay": 0.18823529411764706,
-   "relocation": 0.03529411764705882,
-   "role_fit": 0.16470588235294117,
-   "workload": 0.047058823529411764
+   "career_growth": 0.1058823529,
+   "culture": 0.1529411765,
+   "manager": 0.3058823529,
+   "pay": 0.1882352941,
+   "relocation": 0.03529411765,
+   "role_fit": 0.1647058824,
+   "workload": 0.04705882353
   },
   "platform": {
-   "career_growth": 0.12941176470588237,
-   "culture": 0.07058823529411765,
-   "manager": 0.29411764705882354,
-   "pay": 0.23529411764705882,
-   "relocation": 0.023529411764705882,
-   "role_fit": 0.2235294117647059,
-   "workload": 0.023529411764705882
+   "career_growth": 0.1294117647,
+   "culture": 0.07058823529,
+   "manager": 0.2941176471,
+   "pay": 0.2352941176,
+   "relocation": 0.02352941176,
+   "role_fit": 0.2235294118,
+   "workload": 0.02352941176
   },
   "truth": {
-   "career_growth": 0.12941176470588237,
-   "culture": 0.03529411764705882,
-   "manager": 0.3058823529411765,
-   "pay": 0.23529411764705882,
-   "relocation": 0.03529411764705882,
-   "role_fit": 0.23529411764705882,
-   "workload": 0.023529411764705882
+   "career_growth": 0.1294117647,
+   "culture": 0.03529411765,
+   "manager": 0.3058823529,
+   "pay": 0.2352941176,
+   "relocation": 0.03529411765,
+   "role_fit": 0.2352941176,
+   "workload": 0.02352941176
   }
  },
  "gates": [
@@ -1190,7 +1190,7 @@
    "limit": 0.99,
    "op": ">=",
    "pass": true,
-   "value": 0.9941877617844558
+   "value": 0.9941877618
   },
   {
    "gate": "Cells about fewer than 5 people revealed, directly or by subtraction",
@@ -1204,14 +1204,14 @@
    "limit": 1.0,
    "op": "<=",
    "pass": true,
-   "value": 0.9316682347089301
+   "value": 0.9316682347
   },
   {
    "gate": "Hiring forecast error / trailing-average error",
    "limit": 0.85,
    "op": "<=",
    "pass": true,
-   "value": 0.7474221662860607
+   "value": 0.7474221663
   },
   {
    "gate": "Seeds where the pilot's interval covers the true time saved",
@@ -1232,21 +1232,21 @@
    "limit": 0.0,
    "op": "<=",
    "pass": true,
-   "value": -0.01600818974342396
+   "value": -0.01600818974
   },
   {
    "gate": "Exit comments coded to the real reason",
    "limit": 0.9,
    "op": ">=",
    "pass": true,
-   "value": 0.9556933616820222
+   "value": 0.9556933617
   },
   {
    "gate": "Analyst hours a month / spreadsheet hours",
    "limit": 0.5,
    "op": "<=",
    "pass": true,
-   "value": 0.13484297391372363
+   "value": 0.1348429739
   }
  ],
  "issues_sample": [
@@ -1325,26 +1325,26 @@
  ],
  "pilot_sample": {
   "before_after": {
-   "control_wrong_rate": 0.037698412698412696,
+   "control_wrong_rate": 0.0376984127,
    "hours": {
     "ci": [
-     -8.006182332546086,
-     -6.027795161381389
+     -8.006182333,
+     -6.027795161
     ],
     "covered": false,
-    "error": 3.4379005847953232,
-    "estimate": -7.0151152882205485,
-    "true_effect": -10.453015873015872
+    "error": 3.437900585,
+    "estimate": -7.015115288,
+    "true_effect": -10.45301587
    },
    "minutes": {
     "ci": [
-     -5.644790004124873,
-     -3.6813717759334303
+     -5.644790004,
+     -3.681371776
     ],
     "covered": true,
-    "error": 0.09421470342523097,
-    "estimate": -4.66173767752715,
-    "true_effect": -4.755952380952381
+    "error": 0.09421470343,
+    "estimate": -4.661737678,
+    "true_effect": -4.755952381
    },
    "model_calls": 377,
    "people_minutes_if_rolled_out": 3790.0,
@@ -1352,40 +1352,40 @@
    "run": true,
    "sensitive_read_by_model": 0,
    "tickets": 504,
-   "treated_share": 0.5218253968253969,
-   "treated_wrong_rate": 0.017857142857142856,
+   "treated_share": 0.5218253968,
+   "treated_wrong_rate": 0.01785714286,
    "wrong": {
     "ci": [
-     -0.02985723128726698,
-     0.010868119572392003
+     -0.02985723129,
+     0.01086811957
     ],
     "covered": true,
-    "error": 0.011382623224728487,
-    "estimate": -0.008458646616541353,
-    "true_effect": -0.01984126984126984
+    "error": 0.01138262322,
+    "estimate": -0.008458646617,
+    "true_effect": -0.01984126984
    }
   },
   "platform": {
-   "control_wrong_rate": 0.037698412698412696,
+   "control_wrong_rate": 0.0376984127,
    "hours": {
     "ci": [
-     -12.532264612927934,
-     -9.842066433982685
+     -12.53226461,
+     -9.842066434
     ],
     "covered": true,
-    "error": -0.7286684902992153,
-    "estimate": -11.181684363315087,
-    "true_effect": -10.453015873015872
+    "error": -0.7286684903,
+    "estimate": -11.18168436,
+    "true_effect": -10.45301587
    },
    "minutes": {
     "ci": [
-     -6.891605033945424,
-     -4.0632441395896635
+     -6.891605034,
+     -4.06324414
     ],
     "covered": true,
-    "error": -0.7852021873072461,
-    "estimate": -5.5411545682596275,
-    "true_effect": -4.755952380952381
+    "error": -0.7852021873,
+    "estimate": -5.541154568,
+    "true_effect": -4.755952381
    },
    "model_calls": 377,
    "people_minutes_if_rolled_out": 3790.0,
@@ -1393,17 +1393,17 @@
    "run": true,
    "sensitive_read_by_model": 0,
    "tickets": 504,
-   "treated_share": 0.5218253968253969,
-   "treated_wrong_rate": 0.017857142857142856,
+   "treated_share": 0.5218253968,
+   "treated_wrong_rate": 0.01785714286,
    "wrong": {
     "ci": [
-     -0.04749576012454695,
-     0.005303824933358127
+     -0.04749576012,
+     0.005303824933
     ],
     "covered": true,
-    "error": -0.0022940030236939524,
-    "estimate": -0.022135272864963793,
-    "true_effect": -0.01984126984126984
+    "error": -0.002294003024,
+    "estimate": -0.02213527286,
+    "true_effect": -0.01984126984
    }
   }
  },
@@ -1415,7 +1415,7 @@
     "parent": "Company",
     "population": 24,
     "published": true,
-    "value": 0.046511627906976744,
+    "value": 0.04651162791,
     "why": ""
    },
    {
@@ -1424,7 +1424,7 @@
     "parent": "Company",
     "population": 197,
     "published": true,
-    "value": 0.16334467671366068,
+    "value": 0.1633446767,
     "why": ""
    },
    {
@@ -1433,7 +1433,7 @@
     "parent": "Company",
     "population": 42,
     "published": true,
-    "value": 0.2571428571428571,
+    "value": 0.2571428571,
     "why": ""
    },
    {
@@ -1442,7 +1442,7 @@
     "parent": "Company",
     "population": 22,
     "published": true,
-    "value": 0.05084745762711864,
+    "value": 0.05084745763,
     "why": ""
    },
    {
@@ -1451,7 +1451,7 @@
     "parent": "Company",
     "population": 107,
     "published": true,
-    "value": 0.18085106382978725,
+    "value": 0.1808510638,
     "why": ""
    },
    {
@@ -1469,7 +1469,7 @@
     "parent": "Commercial",
     "population": 10,
     "published": true,
-    "value": 0.1111111111111111,
+    "value": 0.1111111111,
     "why": ""
    },
    {
@@ -1487,7 +1487,7 @@
     "parent": "Engineering",
     "population": 40,
     "published": true,
-    "value": 0.11910669975186103,
+    "value": 0.1191066998,
     "why": ""
    },
    {
@@ -1496,7 +1496,7 @@
     "parent": "Engineering",
     "population": 62,
     "published": true,
-    "value": 0.1415929203539823,
+    "value": 0.1415929204,
     "why": ""
    },
    {
@@ -1505,7 +1505,7 @@
     "parent": "Engineering",
     "population": 62,
     "published": true,
-    "value": 0.1348314606741573,
+    "value": 0.1348314607,
     "why": ""
    },
    {
@@ -1514,7 +1514,7 @@
     "parent": "Engineering",
     "population": 33,
     "published": true,
-    "value": 0.30594900849858353,
+    "value": 0.3059490085,
     "why": ""
    },
    {
@@ -1523,7 +1523,7 @@
     "parent": "Field",
     "population": 27,
     "published": true,
-    "value": 0.17204301075268819,
+    "value": 0.1720430108,
     "why": ""
    },
    {
@@ -1532,7 +1532,7 @@
     "parent": "Field",
     "population": 15,
     "published": true,
-    "value": 0.425531914893617,
+    "value": 0.4255319149,
     "why": ""
    },
    {
@@ -1550,7 +1550,7 @@
     "parent": "G&A",
     "population": 7,
     "published": true,
-    "value": 0.15584415584415584,
+    "value": 0.1558441558,
     "why": ""
    },
    {
@@ -1568,7 +1568,7 @@
     "parent": "Production",
     "population": 69,
     "published": true,
-    "value": 0.23013698630136986,
+    "value": 0.2301369863,
     "why": ""
    },
    {
@@ -1577,7 +1577,7 @@
     "parent": "Production",
     "population": 18,
     "published": true,
-    "value": 0.12631578947368421,
+    "value": 0.1263157895,
     "why": ""
    },
    {
@@ -1586,7 +1586,7 @@
     "parent": "Production",
     "population": 20,
     "published": true,
-    "value": 0.057692307692307696,
+    "value": 0.05769230769,
     "why": ""
    },
    {
@@ -1606,7 +1606,7 @@
     "parent": "Company",
     "population": 27,
     "published": true,
-    "value": 0.07407407407407407,
+    "value": 0.07407407407,
     "why": ""
    },
    {
@@ -1615,7 +1615,7 @@
     "parent": "Company",
     "population": 202,
     "published": true,
-    "value": 0.16831683168316833,
+    "value": 0.1683168317,
     "why": ""
    },
    {
@@ -1624,7 +1624,7 @@
     "parent": "Company",
     "population": 43,
     "published": true,
-    "value": 0.23255813953488372,
+    "value": 0.2325581395,
     "why": ""
    },
    {
@@ -1633,7 +1633,7 @@
     "parent": "Company",
     "population": 24,
     "published": true,
-    "value": 0.08333333333333333,
+    "value": 0.08333333333,
     "why": ""
    },
    {
@@ -1642,7 +1642,7 @@
     "parent": "Company",
     "population": 109,
     "published": true,
-    "value": 0.1926605504587156,
+    "value": 0.1926605505,
     "why": ""
    },
    {
@@ -1660,7 +1660,7 @@
     "parent": "Commercial",
     "population": 12,
     "published": true,
-    "value": 0.08333333333333333,
+    "value": 0.08333333333,
     "why": ""
    },
    {
@@ -1669,7 +1669,7 @@
     "parent": "Commercial",
     "population": 15,
     "published": true,
-    "value": 0.06666666666666667,
+    "value": 0.06666666667,
     "why": ""
    },
    {
@@ -1687,7 +1687,7 @@
     "parent": "Engineering",
     "population": 62,
     "published": true,
-    "value": 0.1774193548387097,
+    "value": 0.1774193548,
     "why": ""
    },
    {
@@ -1705,7 +1705,7 @@
     "parent": "Engineering",
     "population": 36,
     "published": true,
-    "value": 0.2222222222222222,
+    "value": 0.2222222222,
     "why": ""
    },
    {
@@ -1714,7 +1714,7 @@
     "parent": "Field",
     "population": 28,
     "published": true,
-    "value": 0.14285714285714285,
+    "value": 0.1428571429,
     "why": ""
    },
    {
@@ -1759,7 +1759,7 @@
     "parent": "Production",
     "population": 71,
     "published": true,
-    "value": 0.23943661971830985,
+    "value": 0.2394366197,
     "why": ""
    },
    {
@@ -1768,7 +1768,7 @@
     "parent": "Production",
     "population": 18,
     "published": true,
-    "value": 0.1111111111111111,
+    "value": 0.1111111111,
     "why": ""
    },
    {
@@ -1840,37 +1840,37 @@
     {
      "actual": 21.0,
      "origin": 12,
-     "predicted": 15.969396915660802
+     "predicted": 15.96939692
     },
     {
      "actual": 42.0,
      "origin": 15,
-     "predicted": 23.22296705020362
+     "predicted": 23.22296705
     },
     {
      "actual": 28.0,
      "origin": 18,
-     "predicted": 22.1232028809636
+     "predicted": 22.12320288
     },
     {
      "actual": 41.0,
      "origin": 21,
-     "predicted": 26.512909269713084
+     "predicted": 26.51290927
     },
     {
      "actual": 36.0,
      "origin": 24,
-     "predicted": 24.22359712911685
+     "predicted": 24.22359713
     },
     {
      "actual": 36.0,
      "origin": 27,
-     "predicted": 30.477285527642508
+     "predicted": 30.47728553
     },
     {
      "actual": 54.0,
      "origin": 30,
-     "predicted": 37.874760176685626
+     "predicted": 37.87476018
     }
    ]
   },
@@ -1954,37 +1954,37 @@
     {
      "actual": 22.0,
      "origin": 12,
-     "predicted": 13.198477102650557
+     "predicted": 13.1984771
     },
     {
      "actual": 23.0,
      "origin": 15,
-     "predicted": 13.298724062275365
+     "predicted": 13.29872406
     },
     {
      "actual": 21.0,
      "origin": 18,
-     "predicted": 13.979092733698634
+     "predicted": 13.97909273
     },
     {
      "actual": 25.0,
      "origin": 21,
-     "predicted": 16.555630909685316
+     "predicted": 16.55563091
     },
     {
      "actual": 28.0,
      "origin": 24,
-     "predicted": 20.958308863920937
+     "predicted": 20.95830886
     },
     {
      "actual": 32.0,
      "origin": 27,
-     "predicted": 24.03650653436444
+     "predicted": 24.03650653
     },
     {
      "actual": 25.0,
      "origin": 30,
-     "predicted": 25.713895730194327
+     "predicted": 25.71389573
     }
    ]
   },

@@ -9,6 +9,8 @@ from pathlib import Path
 
 import yaml
 
+from paf.lab.tidy import tidy
+
 ROOT = Path(__file__).resolve().parents[3]
 REPORTS = ROOT / "reports"
 START, END = "<!-- results:start -->", "<!-- results:end -->"
@@ -199,7 +201,7 @@ def write_all() -> None:
     readme.write_text(text[:a] + "\n\n" + readme_block() + "\n\n" + text[b:])
     out = ROOT / "web" / "public" / "data" / "report.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(console_data(), separators=(",", ":"), sort_keys=True, default=float) + "\n")
+    out.write_text(json.dumps(tidy(console_data()), separators=(",", ":"), sort_keys=True, default=float) + "\n")
     from paf.lab import bi
 
     bi.export(ROOT / "bi")
