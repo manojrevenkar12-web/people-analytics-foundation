@@ -166,7 +166,7 @@ def _km(durations: np.ndarray, events: np.ndarray) -> tuple[np.ndarray, np.ndarr
         j = i
         while j < len(t) and t[j] == t[i]:
             j += 1
-        d = e[i:j].sum()
+        d = int(e[i:j].sum())
         if d:
             s *= 1 - d / n
             times.append(float(t[i]))
