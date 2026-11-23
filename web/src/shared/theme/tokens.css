@@ -1,0 +1,63 @@
+/* Pale sage paper, green-black ink, a deep spruce for the platform, ochre for the spreadsheets. */
+:root {
+  --bg: #f2f4f3;
+  --surface: #ffffff;
+  --surface-sunk: #e4e9e6;
+  --ink: #17201c;
+  --ink-2: #4b5852;
+  --ink-3: #6f7b75;
+  --rule: #cfd8d3;
+  --platform: #1f6f5c;
+  --platform-soft: #dcece6;
+  --spreadsheet: #a8741a;
+  --spreadsheet-soft: #f3e7d0;
+  --truth: #17201c;
+  --good: #1f6f5c;
+  --bad: #b23a2b;
+  --hidden: #9aa7a0;
+  --focus: #1f6f5c;
+
+  --font: "Public Sans Variable", system-ui, sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.5rem;
+  --step-3: 2.25rem;
+  --lh-tight: 1.12;
+  --lh-body: 1.55;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --measure: 68ch;
+  --page: 1100px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a17;
+    --surface: #1b231f;
+    --surface-sunk: #101512;
+    --ink: #e7eeea;
+    --ink-2: #aebbb4;
+    --ink-3: #87958e;
+    --rule: #2f3b35;
+    --platform: #5fc3a6;
+    --platform-soft: #1f3a32;
+    --spreadsheet: #e0a64a;
+    --spreadsheet-soft: #3a2f1c;
+    --truth: #e7eeea;
+    --good: #5fc3a6;
+    --bad: #ef7d6c;
+    --hidden: #5d6a63;
+    --focus: #5fc3a6;
+  }
+}

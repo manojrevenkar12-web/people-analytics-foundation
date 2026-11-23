@@ -1,0 +1,61 @@
+.loading {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-7) 0;
+  max-width: 40rem;
+}
+.bar {
+  height: 0.9rem;
+  border-radius: var(--radius-s);
+  background: linear-gradient(90deg, var(--surface-sunk), var(--surface), var(--surface-sunk));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+.bar:nth-child(2) {
+  width: 82%;
+}
+.bar:nth-child(3) {
+  width: 64%;
+}
+.label {
+  color: var(--ink-3);
+  font-size: var(--step--1);
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.error {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-left: 3px solid var(--bad);
+  background: var(--surface);
+  max-width: var(--measure);
+}
+.hint {
+  color: var(--ink-2);
+  font-size: var(--step--1);
+}
+.button {
+  justify-self: start;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-s);
+  background: var(--ink);
+  color: var(--surface);
+  cursor: pointer;
+}
+.empty {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius-m);
+  color: var(--ink-2);
+}
+.empty h3 {
+  font-size: var(--step-1);
+  color: var(--ink);
+}

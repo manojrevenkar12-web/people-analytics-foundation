@@ -1,0 +1,1885 @@
+{
+ "config_hash": "7bec1950107c5b83",
+ "designs": {
+  "before_after": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9963235294117647,
+    "headcount": 0.9963235294117647,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9985294117647059,
+    "voluntary_turnover_12m": 0.9977941176470588
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9977916775117126,
+   "kpi_wrong_cells": 24,
+   "label": "Pilot read out before/after instead of randomised",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 0,
+    "error": 3.0177216363316632,
+    "estimate": -7.020232066849479,
+    "per_seed": [
+     {
+      "ci": [
+       -7.719340041483256,
+       -6.016722574916951
+      ],
+      "estimate": -6.878438868734039,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -8.090788402724371,
+       -6.202868231041166
+      ],
+      "estimate": -7.162025264964919,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.42410529293511123,
+    "estimate": -4.88738119531593,
+    "per_seed": [
+     {
+      "ci": [
+       -5.75726764464538,
+       -4.01951557085714
+      ],
+      "estimate": -4.877755374659327,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -5.78970300812516,
+       -3.9283879848362595
+      ],
+      "estimate": -4.897007015972532,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": 0.0015876337081210806,
+    "estimate": -0.013161129389871658,
+    "per_seed": [
+     {
+      "ci": [
+       -0.021111409847976208,
+       0.014970695111818007
+      ],
+      "estimate": -0.003344948733467752,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.03973998064146619,
+       -0.006517697316297693
+      ],
+      "estimate": -0.022977310046275564,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5544308259344084,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "model_alone": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.3040870843512076,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 0.692922794117647,
+   "exit_by_model": 1.0,
+   "exit_minutes": 0.0,
+   "exit_share_error": 0.17996323529411765,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9963235294117647,
+    "headcount": 0.9963235294117647,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9985294117647059,
+    "voluntary_turnover_12m": 0.9977941176470588
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9977916775117126,
+   "kpi_wrong_cells": 24,
+   "label": "Same data, AI without guardrails (no sensitive-topic rule, no checks)",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 1.0,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.2185789681002479,
+    "estimate": -16.501316852635632,
+    "per_seed": [
+     {
+      "ci": [
+       -17.535173582089552,
+       -15.843468320750494
+      ],
+      "estimate": -16.683695652173913,
+      "true_effect": -16.78844517184943
+     },
+     {
+      "ci": [
+       -17.089759711089044,
+       -15.577330809456633
+      ],
+      "estimate": -16.318938053097348,
+      "true_effect": -16.65134646962233
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -16.71989582073588
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.07223013825954183,
+    "estimate": -11.906594111288225,
+    "per_seed": [
+     {
+      "ci": [
+       -12.362352684417285,
+       -11.14713819323911
+      ],
+      "estimate": -11.745341614906833,
+      "true_effect": -11.872340425531915
+     },
+     {
+      "ci": [
+       -12.633591693862511,
+       -11.485066526610643
+      ],
+      "estimate": -12.067846607669617,
+      "true_effect": -11.796387520525451
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -11.834363973028683
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.020691951097578154,
+    "estimate": 0.2539056694281422,
+    "per_seed": [
+     {
+      "ci": [
+       0.18906326197694617,
+       0.3034874313176785
+      ],
+      "estimate": 0.24478282361537967,
+      "true_effect": 0.2700490998363339
+     },
+     {
+      "ci": [
+       0.207232946940788,
+       0.31265666691398125
+      ],
+      "estimate": 0.26302851524090465,
+      "true_effect": 0.2791461412151067
+     }
+    ],
+    "seeds": 2,
+    "true_effect": 0.27459762052572034
+   },
+   "retention_mae": 1.5544308259344084,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 266,
+   "tickets": 1220
+  },
+  "naive_forecast": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.595238095238095,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9963235294117647,
+    "headcount": 0.9963235294117647,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9985294117647059,
+    "voluntary_turnover_12m": 0.9977941176470588
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9977916775117126,
+   "kpi_wrong_cells": 24,
+   "label": "Trailing averages instead of the forecasts",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.3638487740746501,
+    "estimate": -4.827124676455469,
+    "per_seed": [
+     {
+      "ci": [
+       -5.574118998516588,
+       -3.0579888872804686
+      ],
+      "estimate": -4.319736078574653,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -6.599370916026851,
+       -4.153935883319148
+      ],
+      "estimate": -5.334513274336284,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5785714285714287,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "no_identity": {
+   "analyst_hours_month": 24.788888888888888,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 30,
+    "exit_never_recorded": 124,
+    "leave_not_recorded": 52,
+    "paid_after_exit": 22,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.8173282144716294,
+    "headcount": 0.8173282144716294,
+    "hires": 0.9712823182370294,
+    "new_hire_exits_90d": 0.9837975013014055,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9911547804962693,
+    "voluntary_turnover_12m": 0.9653544161027243
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.8975694444444444,
+   "kpi_correct": 0.9424510346173868,
+   "kpi_wrong_cells": 625,
+   "label": "No identity linking across the two HRIS",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.3638487740746501,
+    "estimate": -4.827124676455469,
+    "per_seed": [
+     {
+      "ci": [
+       -5.574118998516588,
+       -3.0579888872804686
+      ],
+      "estimate": -4.319736078574653,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -6.599370916026851,
+       -4.153935883319148
+      ],
+      "estimate": -5.334513274336284,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5491731813283078,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 654.8,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "no_quality": {
+   "analyst_hours_month": 6.599999999999998,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {},
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.2880707273008145,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.13363605338995904,
+    "headcount": 0.1303465797057485,
+    "hires": 0.7519101698771424,
+    "new_hire_exits_90d": 0.9668872288791142,
+    "open_reqs": 0.7944552934930988,
+    "time_to_fill_median": 0.9740847300166844,
+    "underpaid_share": 0.48393893144243894,
+    "voluntary_turnover_12m": 0.2703079971181556
+   },
+   "kpi_cells": 10416,
+   "kpi_company_correct": 0.43923611111111116,
+   "kpi_correct": 0.5631958729902927,
+   "kpi_wrong_cells": 4548,
+   "label": "No payroll and ATS checks",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.3638487740746501,
+    "estimate": -4.827124676455469,
+    "per_seed": [
+     {
+      "ci": [
+       -5.574118998516588,
+       -3.0579888872804686
+      ],
+      "estimate": -4.319736078574653,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -6.599370916026851,
+       -4.153935883319148
+      ],
+      "estimate": -5.334513274336284,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 2.0698133226433333,
+   "retention_naive_mae": 1.5785714285714285,
+   "review_hours": 0.0,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "no_sensitive_rule": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9963235294117647,
+    "headcount": 0.9963235294117647,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9985294117647059,
+    "voluntary_turnover_12m": 0.9977941176470588
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9977916775117126,
+   "kpi_wrong_cells": 24,
+   "label": "Assistant without the sensitive-topic rule",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.33997852271659657,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.4071593952050363,
+    "estimate": -4.430258086682304,
+    "per_seed": [
+     {
+      "ci": [
+       -5.231570348464902,
+       -2.599590698344244
+      ],
+      "estimate": -3.914891787917213,
+      "true_effect": -3.9328968903436987
+     },
+     {
+      "ci": [
+       -6.2710594629916026,
+       -3.699394836499755
+      ],
+      "estimate": -4.945624385447395,
+      "true_effect": -4.113300492610837
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.0230986914772675
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5544308259344084,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 266,
+   "tickets": 1220
+  },
+  "platform": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 0,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9963235294117647,
+    "headcount": 0.9963235294117647,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9933628318584071,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9985294117647059,
+    "voluntary_turnover_12m": 0.9977941176470588
+   },
+   "kpi_cells": 10864,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9977916775117126,
+   "kpi_wrong_cells": 24,
+   "label": "people-analytics-foundation",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.3638487740746501,
+    "estimate": -4.827124676455469,
+    "per_seed": [
+     {
+      "ci": [
+       -5.574118998516588,
+       -3.0579888872804686
+      ],
+      "estimate": -4.319736078574653,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -6.599370916026851,
+       -4.153935883319148
+      ],
+      "estimate": -5.334513274336284,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5544308259344084,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "small_groups_only": {
+   "analyst_hours_month": 6.74722222222222,
+   "assistant_wrong_rate": 0.014740700727494564,
+   "corrections": {
+    "contractor_recorded_as_employee": 51,
+    "exit_never_recorded": 17,
+    "leave_not_recorded": 10,
+    "paid_after_exit": 22,
+    "tenure_reset_at_migration": 318,
+    "zombie_requisition_closed": 9
+   },
+   "disclosures": 565,
+   "exit_accuracy": 1.0,
+   "exit_by_model": 0.6087316176470587,
+   "exit_minutes": 228.0,
+   "exit_share_error": 0.0,
+   "helpdesk_run": true,
+   "hiring_mae": 2.3293725464260486,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.9966032608695652,
+    "headcount": 0.9966032608695652,
+    "hires": 1.0,
+    "new_hire_exits_90d": 1.0,
+    "open_reqs": 0.9938775510204081,
+    "time_to_fill_median": 1.0,
+    "underpaid_share": 0.9986413043478262,
+    "voluntary_turnover_12m": 0.9979619565217391
+   },
+   "kpi_cells": 11768,
+   "kpi_company_correct": 0.9913194444444444,
+   "kpi_correct": 0.9979609167036381,
+   "kpi_wrong_cells": 24,
+   "label": "Hide small groups, but not their siblings",
+   "manual_wrong_rate": 0.029489463825487304,
+   "people_minutes_saved_share": 0.3771759364160039,
+   "pilot_hours": {
+    "covered_seeds": 2,
+    "error": 0.23549773738390645,
+    "estimate": -9.802455965797236,
+    "per_seed": [
+     {
+      "ci": [
+       -11.581652066932596,
+       -9.163731335732711
+      ],
+      "estimate": -10.342899804423048,
+      "true_effect": -10.241194762684124
+     },
+     {
+      "ci": [
+       -10.756131867308389,
+       -7.831946047066849
+      ],
+      "estimate": -9.262012127171424,
+      "true_effect": -9.834712643678161
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -10.037953703181142
+   },
+   "pilot_minutes": {
+    "covered_seeds": 2,
+    "error": -0.3638487740746501,
+    "estimate": -4.827124676455469,
+    "per_seed": [
+     {
+      "ci": [
+       -5.574118998516588,
+       -3.0579888872804686
+      ],
+      "estimate": -4.319736078574653,
+      "true_effect": -4.364975450081833
+     },
+     {
+      "ci": [
+       -6.599370916026851,
+       -4.153935883319148
+      ],
+      "estimate": -5.334513274336284,
+      "true_effect": -4.561576354679803
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -4.463275902380818
+   },
+   "pilot_wrong": {
+    "covered_seeds": 2,
+    "error": -0.004939057157320206,
+    "estimate": -0.019687820255312946,
+    "per_seed": [
+     {
+      "ci": [
+       -0.06289783133533133,
+       0.001076619908937828
+      ],
+      "estimate": -0.03203378538116014,
+      "true_effect": -0.01800327332242226
+     },
+     {
+      "ci": [
+       -0.022355346950976702,
+       0.008738726500070793
+      ],
+      "estimate": -0.0073418551294657484,
+      "true_effect": -0.011494252873563218
+     }
+    ],
+    "seeds": 2,
+    "true_effect": -0.014748763097992739
+   },
+   "retention_mae": 1.5544308259344084,
+   "retention_naive_mae": 1.5785714285714287,
+   "review_hours": 5.3,
+   "sensitive_read_by_model": 87,
+   "tickets": 1220
+  },
+  "status_quo": {
+   "analyst_hours_month": 49.0,
+   "corrections": {},
+   "disclosures": 592,
+   "exit_accuracy": 0.9764705882352941,
+   "exit_by_model": 0.0,
+   "exit_minutes": 447.0,
+   "exit_share_error": 0.023529411764705868,
+   "helpdesk_run": false,
+   "hiring_mae": 2.595238095238095,
+   "hiring_naive_mae": 2.595238095238095,
+   "kpi_by": {
+    "fte": 0.39709595959595956,
+    "headcount": 0.3907828282828283,
+    "hires": 0.8863636363636364,
+    "new_hire_exits_90d": 0.9734848484848485,
+    "open_reqs": 0.8282828282828283,
+    "time_to_fill_median": 0.9791666666666667,
+    "underpaid_share": 0.7821969696969697,
+    "voluntary_turnover_12m": 0.25883838383838387
+   },
+   "kpi_cells": 12672,
+   "kpi_company_correct": 0.5399305555555556,
+   "kpi_correct": 0.6870265151515151,
+   "kpi_wrong_cells": 3966,
+   "label": "Spreadsheets: an export from each system, an analyst's definitions, every cell shared",
+   "manual_wrong_rate": 0.029489463825487304,
+   "retention_mae": 1.7714285714285714,
+   "retention_naive_mae": 1.7714285714285714,
+   "review_hours": 0.0,
+   "sensitive_read_by_model": 0,
+   "tickets": 1220
+  }
+ },
+ "exit_shares": {
+  "model_alone": {
+   "career_growth": 0.09411764705882353,
+   "culture": 0.08235294117647059,
+   "manager": 0.4470588235294118,
+   "pay": 0.2,
+   "relocation": 0.011764705882352941,
+   "role_fit": 0.12941176470588237,
+   "workload": 0.03529411764705882
+  },
+  "platform": {
+   "career_growth": 0.058823529411764705,
+   "culture": 0.0,
+   "manager": 0.5647058823529412,
+   "pay": 0.21176470588235294,
+   "relocation": 0.023529411764705882,
+   "role_fit": 0.11764705882352941,
+   "workload": 0.023529411764705882
+  },
+  "truth": {
+   "career_growth": 0.058823529411764705,
+   "culture": 0.0,
+   "manager": 0.5647058823529412,
+   "pay": 0.21176470588235294,
+   "relocation": 0.023529411764705882,
+   "role_fit": 0.11764705882352941,
+   "workload": 0.023529411764705882
+  }
+ },
+ "gates": [
+  {
+   "gate": "Published KPI cells that match the truth",
+   "limit": 0.99,
+   "op": ">=",
+   "pass": true,
+   "value": 0.9977916775117126
+  },
+  {
+   "gate": "Cells about fewer than 5 people revealed, directly or by subtraction",
+   "limit": 0.0,
+   "op": "<=",
+   "pass": true,
+   "value": 0.0
+  },
+  {
+   "gate": "Retention forecast error / trailing-average error",
+   "limit": 1.0,
+   "op": "<=",
+   "pass": true,
+   "value": 0.9847073105466839
+  },
+  {
+   "gate": "Hiring forecast error / trailing-average error",
+   "limit": 0.85,
+   "op": "<=",
+   "pass": false,
+   "value": 0.8975563940357253
+  },
+  {
+   "gate": "Seeds where the pilot's interval covers the true time saved",
+   "limit": 1.0,
+   "op": ">=",
+   "pass": true,
+   "value": 1.0
+  },
+  {
+   "gate": "Sensitive questions read by the model",
+   "limit": 0.0,
+   "op": "<=",
+   "pass": false,
+   "value": 87.0
+  },
+  {
+   "gate": "Assistant wrong-answer rate minus the People team's",
+   "limit": 0.0,
+   "op": "<=",
+   "pass": true,
+   "value": -0.01474876309799274
+  },
+  {
+   "gate": "Exit comments coded to the real reason",
+   "limit": 0.9,
+   "op": ">=",
+   "pass": true,
+   "value": 1.0
+  },
+  {
+   "gate": "Analyst hours a month / spreadsheet hours",
+   "limit": 0.5,
+   "op": "<=",
+   "pass": true,
+   "value": 0.13769841269841265
+  }
+ ],
+ "issues_sample": [
+  {
+   "detail": "Engineering Krakau",
+   "resolved": "ENG-PL",
+   "rule": "unknown_department",
+   "worker_key": ""
+  },
+  {
+   "detail": "ENG-PL",
+   "resolved": "ENG-PL",
+   "rule": "unknown_org_unit",
+   "worker_key": ""
+  },
+  {
+   "detail": "from 2025-01-01",
+   "resolved": "left 2024-12-14",
+   "rule": "unpaid_but_active",
+   "worker_key": "1048|W-00030"
+  },
+  {
+   "detail": "from 2026-06-01",
+   "resolved": "leave 2026-05-08",
+   "rule": "unpaid_on_unrecorded_leave",
+   "worker_key": "1058|W-00035"
+  },
+  {
+   "detail": "from 2025-03-01",
+   "resolved": "left 2025-02-09",
+   "rule": "unpaid_but_active",
+   "worker_key": "1120|W-00082"
+  },
+  {
+   "detail": "from 2024-10-01",
+   "resolved": "leave 2024-09-22",
+   "rule": "unpaid_on_unrecorded_leave",
+   "worker_key": "1147|W-00101"
+  },
+  {
+   "detail": "from 2024-05-01",
+   "resolved": "leave 2024-04-20",
+   "rule": "unpaid_on_unrecorded_leave",
+   "worker_key": "1159|W-00110"
+  },
+  {
+   "detail": "from 2024-11-01",
+   "resolved": "left 2024-10-27",
+   "rule": "unpaid_but_active",
+   "worker_key": "1159|W-00110"
+  },
+  {
+   "detail": "from 2026-03-01",
+   "resolved": "leave 2026-02-16",
+   "rule": "unpaid_on_unrecorded_leave",
+   "worker_key": "1199|W-00135"
+  },
+  {
+   "detail": "from 2026-03-01",
+   "resolved": "left 2026-02-21",
+   "rule": "unpaid_but_active",
+   "worker_key": "1214|W-00144"
+  },
+  {
+   "detail": "from 2026-06-01",
+   "resolved": "left 2026-05-16",
+   "rule": "unpaid_but_active",
+   "worker_key": "1249|W-00168"
+  },
+  {
+   "detail": "from 2026-05-01",
+   "resolved": "left 2026-04-27",
+   "rule": "unpaid_but_active",
+   "worker_key": "1333|W-00236"
+  }
+ ],
+ "pilot_sample": {
+  "before_after": {
+   "control_wrong_rate": 0.04091653027823241,
+   "hours": {
+    "ci": [
+     -7.719340041483256,
+     -6.016722574916951
+    ],
+    "covered": false,
+    "error": 3.3627558939500846,
+    "estimate": -6.878438868734039,
+    "true_effect": -10.241194762684124
+   },
+   "minutes": {
+    "ci": [
+     -5.75726764464538,
+     -4.01951557085714
+    ],
+    "covered": true,
+    "error": -0.5127799245774938,
+    "estimate": -4.877755374659327,
+    "true_effect": -4.364975450081833
+   },
+   "model_calls": 523,
+   "people_minutes_if_rolled_out": 4587.0,
+   "people_minutes_manual": 7254.0,
+   "run": true,
+   "sensitive_read_by_model": 47,
+   "tickets": 611,
+   "treated_share": 0.47299509001636664,
+   "treated_wrong_rate": 0.022913256955810146,
+   "wrong": {
+    "ci": [
+     -0.021111409847976208,
+     0.014970695111818007
+    ],
+    "covered": true,
+    "error": 0.014658324588954507,
+    "estimate": -0.003344948733467752,
+    "true_effect": -0.01800327332242226
+   }
+  },
+  "platform": {
+   "control_wrong_rate": 0.04091653027823241,
+   "hours": {
+    "ci": [
+     -11.581652066932596,
+     -9.163731335732711
+    ],
+    "covered": true,
+    "error": -0.10170504173892425,
+    "estimate": -10.342899804423048,
+    "true_effect": -10.241194762684124
+   },
+   "minutes": {
+    "ci": [
+     -5.574118998516588,
+     -3.0579888872804686
+    ],
+    "covered": true,
+    "error": 0.04523937150718016,
+    "estimate": -4.319736078574653,
+    "true_effect": -4.364975450081833
+   },
+   "model_calls": 523,
+   "people_minutes_if_rolled_out": 4587.0,
+   "people_minutes_manual": 7254.0,
+   "run": true,
+   "sensitive_read_by_model": 47,
+   "tickets": 611,
+   "treated_share": 0.47299509001636664,
+   "treated_wrong_rate": 0.022913256955810146,
+   "wrong": {
+    "ci": [
+     -0.06289783133533133,
+     0.001076619908937828
+    ],
+    "covered": true,
+    "error": -0.014030512058737881,
+    "estimate": -0.03203378538116014,
+    "true_effect": -0.01800327332242226
+   }
+  }
+ },
+ "privacy_view": {
+  "platform": [
+   {
+    "level": "dept",
+    "node": "Commercial",
+    "parent": "Company",
+    "population": 26,
+    "published": true,
+    "value": 0.1267605633802817,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Engineering",
+    "parent": "Company",
+    "population": 249,
+    "published": true,
+    "value": 0.1163241566498643,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Field",
+    "parent": "Company",
+    "population": 51,
+    "published": true,
+    "value": 0.09320388349514563,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "G&A",
+    "parent": "Company",
+    "population": 25,
+    "published": false,
+    "value": 0.0,
+    "why": "protects a small group"
+   },
+   {
+    "level": "dept",
+    "node": "Production",
+    "parent": "Company",
+    "population": 135,
+    "published": true,
+    "value": 0.1759530791788856,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Unmapped",
+    "parent": "Company",
+    "population": 0,
+    "published": false,
+    "value": null,
+    "why": "small group"
+   },
+   {
+    "level": "team",
+    "node": "COM-PGM",
+    "parent": "Commercial",
+    "population": 13,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "COM-SAL",
+    "parent": "Commercial",
+    "population": 13,
+    "published": true,
+    "value": 0.24657534246575344,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-AUT",
+    "parent": "Engineering",
+    "population": 46,
+    "published": true,
+    "value": 0.20382165605095542,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-MEC",
+    "parent": "Engineering",
+    "population": 76,
+    "published": true,
+    "value": 0.08748481166464156,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-PL",
+    "parent": "Engineering",
+    "population": 12,
+    "published": true,
+    "value": 0.08053691275167786,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-SW",
+    "parent": "Engineering",
+    "population": 78,
+    "published": true,
+    "value": 0.15625,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-UA",
+    "parent": "Engineering",
+    "population": 37,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "FLD-TRN",
+    "parent": "Field",
+    "population": 30,
+    "published": true,
+    "value": 0.12244897959183673,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "FLD-UK",
+    "parent": "Field",
+    "population": 21,
+    "published": true,
+    "value": 0.054298642533936646,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-FIN",
+    "parent": "G&A",
+    "population": 8,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-IT",
+    "parent": "G&A",
+    "population": 8,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-PPL",
+    "parent": "G&A",
+    "population": 9,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-ASM",
+    "parent": "Production",
+    "population": 97,
+    "published": true,
+    "value": 0.17721518987341772,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-QA",
+    "parent": "Production",
+    "population": 17,
+    "published": true,
+    "value": 0.2448979591836735,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-SCM",
+    "parent": "Production",
+    "population": 21,
+    "published": true,
+    "value": 0.1090909090909091,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "UNMAPPED",
+    "parent": "Unmapped",
+    "population": 0,
+    "published": false,
+    "value": null,
+    "why": "small group"
+   }
+  ],
+  "status_quo": [
+   {
+    "level": "dept",
+    "node": "Commercial",
+    "parent": "Company",
+    "population": 27,
+    "published": true,
+    "value": 0.1111111111111111,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Engineering",
+    "parent": "Company",
+    "population": 244,
+    "published": true,
+    "value": 0.12704918032786885,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Field",
+    "parent": "Company",
+    "population": 53,
+    "published": true,
+    "value": 0.07547169811320754,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "G&A",
+    "parent": "Company",
+    "population": 27,
+    "published": true,
+    "value": 0.037037037037037035,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Production",
+    "parent": "Company",
+    "population": 139,
+    "published": true,
+    "value": 0.17266187050359713,
+    "why": ""
+   },
+   {
+    "level": "dept",
+    "node": "Unmapped",
+    "parent": "Company",
+    "population": 15,
+    "published": true,
+    "value": 0.06666666666666667,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "COM-PGM",
+    "parent": "Commercial",
+    "population": 13,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "COM-SAL",
+    "parent": "Commercial",
+    "population": 14,
+    "published": true,
+    "value": 0.21428571428571427,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-AUT",
+    "parent": "Engineering",
+    "population": 48,
+    "published": true,
+    "value": 0.16666666666666666,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-MEC",
+    "parent": "Engineering",
+    "population": 77,
+    "published": true,
+    "value": 0.12987012987012986,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-SW",
+    "parent": "Engineering",
+    "population": 82,
+    "published": true,
+    "value": 0.12195121951219512,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "ENG-UA",
+    "parent": "Engineering",
+    "population": 37,
+    "published": true,
+    "value": 0.08108108108108109,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "FLD-TRN",
+    "parent": "Field",
+    "population": 32,
+    "published": true,
+    "value": 0.09375,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "FLD-UK",
+    "parent": "Field",
+    "population": 21,
+    "published": true,
+    "value": 0.047619047619047616,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-FIN",
+    "parent": "G&A",
+    "population": 8,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-IT",
+    "parent": "G&A",
+    "population": 9,
+    "published": true,
+    "value": 0.0,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "GA-PPL",
+    "parent": "G&A",
+    "population": 10,
+    "published": true,
+    "value": 0.1,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-ASM",
+    "parent": "Production",
+    "population": 98,
+    "published": true,
+    "value": 0.16326530612244897,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-QA",
+    "parent": "Production",
+    "population": 19,
+    "published": true,
+    "value": 0.2631578947368421,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "PRD-SCM",
+    "parent": "Production",
+    "population": 22,
+    "published": true,
+    "value": 0.13636363636363635,
+    "why": ""
+   },
+   {
+    "level": "team",
+    "node": "UNMAPPED",
+    "parent": "Unmapped",
+    "population": 15,
+    "published": true,
+    "value": 0.06666666666666667,
+    "why": ""
+   }
+  ]
+ },
+ "sample_seed": 201,
+ "seeds": [
+  201,
+  202
+ ],
+ "series": {
+  "hiring": {
+   "naive": [
+    {
+     "actual": 32.0,
+     "origin": 12,
+     "predicted": 42.0
+    },
+    {
+     "actual": 38.0,
+     "origin": 15,
+     "predicted": 32.0
+    },
+    {
+     "actual": 52.0,
+     "origin": 18,
+     "predicted": 39.0
+    },
+    {
+     "actual": 37.0,
+     "origin": 21,
+     "predicted": 50.0
+    },
+    {
+     "actual": 40.0,
+     "origin": 24,
+     "predicted": 38.0
+    },
+    {
+     "actual": 63.0,
+     "origin": 27,
+     "predicted": 40.0
+    },
+    {
+     "actual": 61.0,
+     "origin": 30,
+     "predicted": 63.0
+    }
+   ],
+   "platform": [
+    {
+     "actual": 32.0,
+     "origin": 12,
+     "predicted": 23.25818413217076
+    },
+    {
+     "actual": 38.0,
+     "origin": 15,
+     "predicted": 26.66908835137712
+    },
+    {
+     "actual": 52.0,
+     "origin": 18,
+     "predicted": 33.95758511916363
+    },
+    {
+     "actual": 37.0,
+     "origin": 21,
+     "predicted": 31.00686708219644
+    },
+    {
+     "actual": 40.0,
+     "origin": 24,
+     "predicted": 35.14164345840279
+    },
+    {
+     "actual": 63.0,
+     "origin": 27,
+     "predicted": 48.44739418371947
+    },
+    {
+     "actual": 61.0,
+     "origin": 30,
+     "predicted": 42.28746971117524
+    }
+   ]
+  },
+  "platform_headcount": [
+   193.0,
+   191.0,
+   194.0,
+   195.0,
+   200.0,
+   208.0,
+   214.0,
+   217.0,
+   224.0,
+   230.0,
+   236.0,
+   246.0,
+   260.0,
+   258.0,
+   261.0,
+   274.0,
+   278.0,
+   284.0,
+   296.0,
+   306.0,
+   327.0,
+   341.0,
+   349.0,
+   348.0,
+   360.0,
+   366.0,
+   374.0,
+   382.0,
+   392.0,
+   411.0,
+   417.0,
+   434.0,
+   454.0,
+   461.0,
+   468.0,
+   486.0
+  ],
+  "retention": {
+   "naive": [
+    {
+     "actual": 26.0,
+     "origin": 12,
+     "predicted": 13.0
+    },
+    {
+     "actual": 23.0,
+     "origin": 15,
+     "predicted": 22.0
+    },
+    {
+     "actual": 28.0,
+     "origin": 18,
+     "predicted": 23.5
+    },
+    {
+     "actual": 28.0,
+     "origin": 21,
+     "predicted": 26.0
+    },
+    {
+     "actual": 29.0,
+     "origin": 24,
+     "predicted": 26.5
+    },
+    {
+     "actual": 24.0,
+     "origin": 27,
+     "predicted": 22.5
+    },
+    {
+     "actual": 19.0,
+     "origin": 30,
+     "predicted": 27.0
+    }
+   ],
+   "platform": [
+    {
+     "actual": 26.0,
+     "origin": 12,
+     "predicted": 15.152436147879243
+    },
+    {
+     "actual": 23.0,
+     "origin": 15,
+     "predicted": 23.662843115409363
+    },
+    {
+     "actual": 28.0,
+     "origin": 18,
+     "predicted": 24.78054349014424
+    },
+    {
+     "actual": 28.0,
+     "origin": 21,
+     "predicted": 28.197937632393618
+    },
+    {
+     "actual": 29.0,
+     "origin": 24,
+     "predicted": 28.164418179004052
+    },
+    {
+     "actual": 24.0,
+     "origin": 27,
+     "predicted": 28.42300151487606
+    },
+    {
+     "actual": 19.0,
+     "origin": 30,
+     "predicted": 32.24470504777281
+    }
+   ]
+  },
+  "status_quo_headcount": [
+   197.0,
+   195.0,
+   198.0,
+   198.0,
+   201.0,
+   208.0,
+   215.0,
+   219.0,
+   225.0,
+   233.0,
+   238.0,
+   248.0,
+   263.0,
+   262.0,
+   268.0,
+   281.0,
+   286.0,
+   293.0,
+   304.0,
+   315.0,
+   340.0,
+   354.0,
+   365.0,
+   366.0,
+   378.0,
+   384.0,
+   393.0,
+   402.0,
+   412.0,
+   432.0,
+   438.0,
+   455.0,
+   475.0,
+   482.0,
+   488.0,
+   505.0
+  ],
+  "truth_headcount": [
+   193.0,
+   191.0,
+   194.0,
+   195.0,
+   200.0,
+   208.0,
+   214.0,
+   217.0,
+   224.0,
+   230.0,
+   236.0,
+   246.0,
+   260.0,
+   258.0,
+   261.0,
+   274.0,
+   278.0,
+   284.0,
+   296.0,
+   306.0,
+   327.0,
+   341.0,
+   349.0,
+   348.0,
+   360.0,
+   366.0,
+   374.0,
+   382.0,
+   392.0,
+   411.0,
+   417.0,
+   434.0,
+   454.0,
+   461.0,
+   468.0,
+   486.0
+  ]
+ },
+ "world": "heldout"
+}

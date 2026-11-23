@@ -1,0 +1,60 @@
+# The KPI catalogue: one definition for each number, computed once. Components are counted per team and month and
+# add up the org tree; a KPI's value is computed from summed components at each level, never by averaging averages.
+# population: the component that says how many people a cell is about (for privacy).
+
+- id: headcount
+  name: Headcount
+  owner: People Analytics
+  definition: Employees (permanent, fixed-term, working students) employed on the last day of the month, including people on leave. Contractors are not employees.
+  value: hc
+  population: hc
+  unit: people
+- id: fte
+  name: Full-time equivalents
+  owner: People Analytics
+  definition: Sum of contracted FTE of the headcount.
+  value: fte
+  population: hc
+  unit: FTE
+- id: hires
+  name: Hires
+  owner: Talent Acquisition
+  definition: Employees whose first day falls in the month, rehires included.
+  value: hires
+  population: hc
+  unit: people
+- id: voluntary_turnover_12m
+  name: Voluntary turnover, trailing 12 months
+  owner: People Analytics
+  definition: Voluntary leavers (last day in the window) over the average month-end headcount in the window.
+  value: vol_exits_12m / avg_hc_12m
+  population: hc
+  unit: share
+- id: new_hire_exits_90d
+  name: New starters gone within 90 days
+  owner: Talent Acquisition
+  definition: Employees whose last day falls in the month and who left within 90 days of their first day.
+  value: early_exits
+  population: hc
+  unit: people
+- id: underpaid_share
+  name: Paid below 90 percent of band
+  owner: Total Rewards
+  definition: Share of the headcount whose base salary is below 0.9 of their level's band midpoint for their country.
+  value: underpaid / hc
+  population: hc
+  unit: share
+- id: open_reqs
+  name: Open requisitions
+  owner: Talent Acquisition
+  definition: Requisitions open on the last day of the month.
+  value: open_reqs
+  population: hc
+  unit: reqs
+- id: time_to_fill_median
+  name: Median days to fill
+  owner: Talent Acquisition
+  definition: Median days from opening to filling, over requisitions filled in the trailing 3 months.
+  value: median(ttf_days_3m)
+  population: hc
+  unit: days

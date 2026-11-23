@@ -1,0 +1,51 @@
+.wrap {
+  display: grid;
+  gap: var(--space-3);
+}
+.pass,
+.fail {
+  font-weight: 600;
+}
+.pass {
+  color: var(--good);
+}
+.fail {
+  color: var(--bad);
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+}
+.list li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr auto;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.mark {
+  font-weight: 700;
+}
+.ok .mark {
+  color: var(--good);
+}
+.no .mark,
+.no .name {
+  color: var(--bad);
+}
+.val {
+  text-align: right;
+}
+.lim {
+  color: var(--ink-3);
+}
+.list :global(.sr-only) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

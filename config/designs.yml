@@ -1,0 +1,29 @@
+# Every design reads the same systems, about the same company, with the same model mistakes.
+status_quo:
+  label: "Spreadsheets: an export from each system, an analyst's definitions, every cell shared"
+  data: {identity: false, quality: false, rename_map: false}
+  definitions: analyst
+  privacy: none
+  forecast: naive
+  assistant: none
+  exit_coding: manual
+  evaluation: before_after
+platform:
+  label: "people-analytics-foundation"
+  data: {identity: true, quality: true, rename_map: true}
+  definitions: official
+  privacy: complementary
+  forecast: model
+  assistant: guarded
+  exit_coding: guarded
+  evaluation: randomised
+model_alone:
+  label: "Same data, AI without guardrails (no sensitive-topic rule, no checks)"
+  overlay: {assistant: unguarded, exit_coding: unguarded}
+ablations:
+  no_identity: {label: "No identity linking across the two HRIS", overlay: {data: {identity: false}}}
+  no_quality: {label: "No payroll and ATS checks", overlay: {data: {quality: false}}}
+  small_groups_only: {label: "Hide small groups, but not their siblings", overlay: {privacy: small_groups}}
+  naive_forecast: {label: "Trailing averages instead of the forecasts", overlay: {forecast: naive}}
+  before_after: {label: "Pilot read out before/after instead of randomised", overlay: {evaluation: before_after}}
+  no_sensitive_rule: {label: "Assistant without the sensitive-topic rule", overlay: {assistant: no_sensitive_rule}}

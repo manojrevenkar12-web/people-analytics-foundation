@@ -1,0 +1,129 @@
+.figure {
+  margin: 0;
+  position: relative;
+}
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+.grid {
+  stroke: var(--rule);
+}
+.tick {
+  fill: var(--ink-3);
+  font-size: 11px;
+}
+.cutover {
+  stroke: var(--ink-2);
+  stroke-dasharray: 3 3;
+}
+.cutLabel {
+  fill: var(--ink-2);
+  font-size: 11.5px;
+}
+.truth,
+.sq,
+.pf {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.truth {
+  stroke: var(--truth);
+  stroke-width: 1.4;
+  stroke-dasharray: 2 4;
+}
+.sq {
+  stroke: var(--spreadsheet);
+  stroke-width: 2;
+}
+.pf {
+  stroke: var(--platform);
+  stroke-width: 2.6;
+  opacity: 0.85;
+}
+.label {
+  fill: var(--ink-2);
+  font-size: 12px;
+}
+.cross {
+  stroke: var(--ink-3);
+}
+.tip {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-7);
+  display: grid;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-s);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+  pointer-events: none;
+}
+.tip strong {
+  color: var(--ink);
+}
+.caption {
+  margin-top: var(--space-2);
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+.draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gap {
+  display: grid;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+  padding-left: 44px;
+}
+.gapRow {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr 9rem;
+  gap: var(--space-3);
+  align-items: end;
+  font-size: var(--step--1);
+}
+.gapName {
+  color: var(--ink-2);
+}
+.gapBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+.gapBars > span {
+  flex: 1;
+  min-height: 1px;
+  border-radius: 2px 2px 0 0;
+}
+.gapSq {
+  background: var(--spreadsheet);
+}
+.gapPf {
+  background: var(--platform);
+}
+.gapMax {
+  color: var(--ink-3);
+  font-size: 0.75rem;
+}
+.gapNote {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}

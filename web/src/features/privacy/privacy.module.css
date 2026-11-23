@@ -1,0 +1,94 @@
+.wrap {
+  display: grid;
+  gap: var(--space-4);
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+}
+.seg button {
+  padding: var(--space-1) var(--space-3);
+  border: 0;
+  background: var(--surface);
+  color: var(--ink-2);
+  cursor: pointer;
+  font-size: var(--step--1);
+}
+.seg button[aria-checked="true"] {
+  background: var(--ink);
+  color: var(--surface);
+}
+.summary {
+  color: var(--ink-2);
+  font-size: var(--step--1);
+}
+.tree {
+  display: grid;
+  gap: var(--space-3);
+}
+.dept {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+.teams {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.cell {
+  display: grid;
+  min-width: 8.5rem;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-s);
+  font-size: var(--step--1);
+}
+.strong {
+  background: var(--platform-soft);
+  border-color: transparent;
+}
+.name {
+  color: var(--ink-2);
+}
+.value {
+  font-size: var(--step-1);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.pop {
+  color: var(--ink-3);
+  font-size: 0.75rem;
+}
+.hidden {
+  background: repeating-linear-gradient(135deg, var(--surface-sunk) 0 5px, var(--surface) 5px 10px);
+}
+.hidden .value {
+  color: var(--hidden);
+  font-weight: 500;
+}
+.exposed {
+  border-color: var(--bad);
+}
+.exposed .pop {
+  color: var(--bad);
+}
+.caption {
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+@media (max-width: 640px) {
+  .dept {
+    grid-template-columns: 1fr;
+  }
+}

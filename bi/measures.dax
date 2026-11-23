@@ -1,0 +1,32 @@
+-- Generated from config/kpis.yml by `python -m paf.cli report`. Do not edit.
+-- One value per KPI, org node and month, already privacy-checked by the platform.
+
+KPI value =
+IF (
+    HASONEVALUE ( dim_kpi[kpi_id] ) && HASONEVALUE ( dim_org[node] ) && HASONEVALUE ( dim_month[month] ),
+    SELECTEDVALUE ( fact_kpi[value] )
+)
+
+Headcount =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "headcount" )
+
+Full-time equivalents =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "fte" )
+
+Hires =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "hires" )
+
+Voluntary turnover, trailing 12 months =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "voluntary_turnover_12m" )
+
+New starters gone within 90 days =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "new_hire_exits_90d" )
+
+Paid below 90 percent of band =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "underpaid_share" )
+
+Open requisitions =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "open_reqs" )
+
+Median days to fill =
+CALCULATE ( [KPI value], dim_kpi[kpi_id] = "time_to_fill_median" )

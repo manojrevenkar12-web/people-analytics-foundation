@@ -1,0 +1,115 @@
+# The platform's own settings. The world never reads this file.
+
+org:
+  # team code -> department; the new HRIS uses these codes directly
+  teams:
+    ENG-MEC: Engineering
+    ENG-SW: Engineering
+    ENG-AUT: Engineering
+    ENG-UA: Engineering
+    PRD-ASM: Production
+    PRD-QA: Production
+    PRD-SCM: Production
+    FLD-TRN: Field
+    FLD-UK: Field
+    COM-SAL: Commercial
+    COM-PGM: Commercial
+    GA-PPL: G&A
+    GA-FIN: G&A
+    GA-IT: G&A
+  # old HRIS department names -> team code, every name the old system has used
+  old_departments:
+    "Mechatronik": ENG-MEC
+    "Software": ENG-SW
+    "Autonomie": ENG-AUT
+    "KI & Autonomie": ENG-AUT
+    "Engineering Kyiv": ENG-UA
+    "Montage": PRD-ASM
+    "Qualität": PRD-QA
+    "Einkauf & Logistik": PRD-SCM
+    "Training & Einsatz": FLD-TRN
+    "Field UK": FLD-UK
+    "Vertrieb": COM-SAL
+    "Programme": COM-PGM
+    "People": GA-PPL
+    "Finanzen": GA-FIN
+    "IT": GA-IT
+
+hris:
+  cutover: "2025-12-01"
+  old_kinds: {Festanstellung: permanent, Befristet: fixed_term, Werkstudent: student, Freelancer: contractor}
+  old_exits: {Eigenkündigung: voluntary, Arbeitgeberkündigung: involuntary, Befristung: contract_end}
+  new_kinds: {Permanent: permanent, Fixed Term: fixed_term, Working Student: student, Contract: contractor}
+  new_exits: {Voluntary: voluntary, Involuntary: involuntary, End of Contract: contract_end}
+
+# The company's salary bands: level midpoints and country factors
+bands:
+  level_mid: {1: 50000, 2: 62000, 3: 77000, 4: 95000, 5: 118000}
+  country: {DE: 1.0, UK: 1.05, UA: 0.45, PL: 0.55}
+
+quality:
+  payroll_gap_months: 2         # an active employee unpaid this long, with no recorded leave, goes to review
+  zombie_req_days: 180          # open this long ...
+  zombie_idle_days: 90          # ... with no activity this long: closed as cancelled
+  review_minutes: 12            # People-team minutes per issue
+
+privacy:
+  min_group: 5                  # no cell about fewer people than this is published
+  complementary: true           # also hide a sibling so a hidden cell cannot be worked out by subtraction
+
+reporting:
+  monthly_pack_hours: 16        # analyst hours to build the monthly pack by hand
+  request_minutes: 45           # analyst minutes per leader request answered by hand
+  self_serve_minutes: 4         # leader minutes when the dashboard answers it
+
+forecast:
+  retention_horizon_months: 6
+  origins: [12, 15, 18, 21, 24, 27, 30]
+  hiring_horizon_days: 90
+
+helpdesk:
+  # topics that always go to a person; the model never reads them
+  sensitive_keywords: ["salary is lower", "raise was wrong", "unfair pay", "conflict", "treating me badly", "bullied",
+                       "clearance", "harass"]
+  min_confidence: 0.7
+  minutes_review: 3             # People-team minutes to glance at a held answer before it goes out
+  answer_hours: 0.05            # assistant's turnaround
+  passages:
+    P-VAC: "Full-time employees get 27 vacation days a year, rising with tenure to 30."
+    P-PAY: "Salaries are paid on the last working day of each month."
+    P-PEN: "The company adds 20 percent of your own contribution to the company pension, on top of the legal 15 percent."
+    P-REL: "Relocation support covers moving costs up to 5,000 euros for hires moving from abroad, against receipts."
+    P-BEN: "The flexible benefits budget is 50 euros a month, spent through the benefits app."
+    P-LRN: "Each employee has a learning budget of 1,000 euros a year; agree the course with your manager first."
+    P-PAR: "Tell the People team about parental leave at least seven weeks before it starts."
+    P-SIC: "From the fourth day of illness a doctor's note is needed; in Germany it arrives electronically."
+  # an answer goes out only if the question names the chosen passage's topic
+  passage_topics:
+    P-VAC: [vacation, holiday, leave days, days off]
+    P-PAY: [salary paid, paid, payday, money in my account, salary arrive]
+    P-PEN: [pension, retirement]
+    P-REL: [relocation, moving, move]
+    P-BEN: [benefits, perk, allowance]
+    P-LRN: [learning, course, certification, training]
+    P-PAR: [parental, baby, maternity, paternity]
+    P-SIC: [ill, sick, doctor, flu]
+  pilot:
+    start_month: 26
+    months: 6
+    treated_share: 0.5          # requesters are assigned by a hash of their id
+
+exit_coding:
+  themes: [pay, manager, career_growth, workload, role_fit, relocation, culture]
+  min_confidence: 0.7
+  manual_minutes: 6             # People-team minutes to code one comment by hand
+  review_minutes: 2
+  # the quoted sentence must name the theme it is quoted for, and must not be praise
+  cues:
+    pay: [pay, salary, offer, money, compensation, paid]
+    manager: [manager, lead, reported, leadership]
+    career_growth: [promotion, level, path, responsibility, outgrew, grow]
+    workload: [overtime, shifts, pace, evenings, worn, workload]
+    role_fit: [role, fit, job, signed up, interview]
+    relocation: [moving, relocating, city, home country, partner, family]
+    culture: [belong, atmosphere, place, processes]
+  praise: [great, fair, liked, learned, interesting, fine, supportive, thanks, best]

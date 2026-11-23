@@ -1,0 +1,112 @@
+# The world. Only src/paf/world and the lab's grading read this file.
+# The company as it really is: who works where, who leaves and why, how long hiring takes, what people ask the
+# People team. Then how the old HRIS, the new HRIS, payroll and the ATS record it, mistakes included.
+
+company:
+  start: "2023-12"          # first month
+  months: 36
+  cutover_month: 24         # the new HRIS goes live at the start of this month
+  countries: [DE, UK, UA]
+  # code, old-HRIS department name, department, job family, country, starting headcount, monthly growth, base
+  # monthly voluntary exit hazard
+  teams:
+    - {code: ENG-MEC, old: "Mechatronik",        dept: Engineering, family: engineering, country: DE, start: 34, growth: 0.022, hazard: 0.0075}
+    - {code: ENG-SW,  old: "Software",           dept: Engineering, family: engineering, country: DE, start: 30, growth: 0.025, hazard: 0.0090}
+    - {code: ENG-AUT, old: "Autonomie",          dept: Engineering, family: engineering, country: DE, start: 16, growth: 0.030, hazard: 0.0100, renamed_month: 12, renamed_to: "KI & Autonomie"}
+    - {code: ENG-UA,  old: "Engineering Kyiv",   dept: Engineering, family: engineering, country: UA, start: 18, growth: 0.020, hazard: 0.0060}
+    - {code: PRD-ASM, old: "Montage",            dept: Production,  family: production,  country: DE, start: 30, growth: 0.028, hazard: 0.0110, overtime: true}
+    - {code: PRD-QA,  old: "Qualität",           dept: Production,  family: production,  country: DE, start: 10, growth: 0.018, hazard: 0.0080, overtime: true}
+    - {code: PRD-SCM, old: "Einkauf & Logistik", dept: Production,  family: operations,  country: DE, start: 12, growth: 0.015, hazard: 0.0085}
+    - {code: FLD-TRN, old: "Training & Einsatz", dept: Field,       family: field,       country: DE, start: 14, growth: 0.020, hazard: 0.0095}
+    - {code: FLD-UK,  old: "Field UK",           dept: Field,       family: field,       country: UK, start: 9,  growth: 0.022, hazard: 0.0105}
+    - {code: COM-SAL, old: "Vertrieb",           dept: Commercial,  family: commercial,  country: DE, start: 9,  growth: 0.015, hazard: 0.0100}
+    - {code: COM-PGM, old: "Programme",          dept: Commercial,  family: commercial,  country: UK, start: 7,  growth: 0.015, hazard: 0.0090}
+    - {code: GA-PPL,  old: "People",             dept: G&A,         family: ga,          country: DE, start: 5,  growth: 0.015, hazard: 0.0080}
+    - {code: GA-FIN,  old: "Finanzen",           dept: G&A,         family: ga,          country: DE, start: 6,  growth: 0.010, hazard: 0.0070}
+    - {code: GA-IT,   old: "IT",                 dept: G&A,         family: ga,          country: DE, start: 5,  growth: 0.012, hazard: 0.0070}
+
+  # what drives people to leave (multipliers on the base hazard); the platform never sees these
+  drivers:
+    underpaid: 1.9            # compa-ratio below 0.9
+    weak_manager: 1.7
+    new_starter: 1.4          # first six months
+    overtime_season: 1.35     # production teams, September to December
+    passed_over: 1.5          # high performer, no promotion for 30+ months
+    manager_change: 1.3       # new manager in the last six months
+  involuntary_monthly: 0.0012
+  fixed_term_share: 0.10
+  student_share: 0.05
+  contractor_share: 0.08
+  regrettable_if_high_performer: true
+  high_performer_share: 0.25
+  weak_manager_share: 0.30
+  underpaid_share: 0.22       # share of new hires paid below 0.9 of the band
+  parental_leave_monthly: 0.0025
+  rehire_share: 0.04
+  notice_months: [1, 3]
+  absence_days_mean: 0.9      # sick days per person-month
+
+hiring:
+  # median days to fill, log-normal spread, offer decline rate; clearance adds days for some roles
+  families:
+    engineering: {median_days: 70, sigma: 0.45, decline: 0.22, clearance_share: 0.35}
+    production:  {median_days: 45, sigma: 0.40, decline: 0.15, clearance_share: 0.20}
+    operations:  {median_days: 50, sigma: 0.40, decline: 0.15, clearance_share: 0.10}
+    field:       {median_days: 60, sigma: 0.45, decline: 0.18, clearance_share: 0.60}
+    commercial:  {median_days: 75, sigma: 0.50, decline: 0.25, clearance_share: 0.40}
+    ga:          {median_days: 55, sigma: 0.40, decline: 0.15, clearance_share: 0.05}
+  clearance_days: 45
+  cancel_share: 0.08
+  applicants_per_req: [18, 60]
+
+# How the systems record it. Rates of mistakes, by system.
+systems:
+  old_hris:
+    missing_exit: 0.05          # leaver never given an exit date
+    notice_as_exit: 0.12        # notice date typed where the last day belongs
+    contractor_as_employee: 0.35
+    leave_not_recorded: 0.25    # parental leave missing from the absence records
+  migration:
+    tenure_reset: 0.28          # migrated worker's hire date set to go-live
+  new_hris:
+    missing_exit: 0.02
+    leave_not_recorded: 0.10
+  ats:
+    zombie_req: 0.12            # cancelled requisition left open
+
+exit_survey:
+  response_rate: 0.62
+  distractor_rate: 0.6          # comment also praises something else
+
+helpdesk:
+  tickets_per_100_people_month: 22
+  pilot_start_month: 26
+  pilot_months: 6
+  onboarding_wave_months: [26, 27]   # many new starters, many routine questions
+
+leaders:
+  requests_per_leader_month: 2.2
+  catalogue_share: 0.8
+
+# The AI reader's mistakes (simulated; the real adapters are tested against a fake transport)
+reader:
+  exit:
+    misses_subtle: 0.10        # reads a polite exit comment as "other"
+    takes_praise_as_reason: 0.14
+    invents_theme: 0.06        # a theme no sentence supports
+    low_confidence: 0.12
+  helpdesk:
+    wrong_passage: 0.08
+    invents_answer: 0.04
+    low_confidence: 0.10
+
+dev:
+  device_note: "development world"
+  new_phrasing_share: 0.0
+  error_scale: 1.0
+
+heldout:
+  new_phrasing_share: 0.35     # exit comments and questions in phrasings the reader was not tuned on
+  error_scale: 1.5             # every system mistake rate x1.5
+  growth_scale: 1.3            # the company grows faster
+  extra_team: {code: ENG-PL, old: "Engineering Krakau", dept: Engineering, family: engineering, country: PL, start: 0, growth: 0.0, hazard: 0.0080, opens_month: 20, opens_with: 14}

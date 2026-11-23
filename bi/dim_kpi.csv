@@ -1,0 +1,9 @@
+kpi_id,name,owner,definition,unit
+headcount,Headcount,People Analytics,"Employees (permanent, fixed-term, working students) employed on the last day of the month, including people on leave. Contractors are not employees.",people
+fte,Full-time equivalents,People Analytics,Sum of contracted FTE of the headcount.,FTE
+hires,Hires,Talent Acquisition,"Employees whose first day falls in the month, rehires included.",people
+voluntary_turnover_12m,"Voluntary turnover, trailing 12 months",People Analytics,Voluntary leavers (last day in the window) over the average month-end headcount in the window.,share
+new_hire_exits_90d,New starters gone within 90 days,Talent Acquisition,Employees whose last day falls in the month and who left within 90 days of their first day.,people
+underpaid_share,Paid below 90 percent of band,Total Rewards,Share of the headcount whose base salary is below 0.9 of their level's band midpoint for their country.,share
+open_reqs,Open requisitions,Talent Acquisition,Requisitions open on the last day of the month.,reqs
+time_to_fill_median,Median days to fill,Talent Acquisition,"Median days from opening to filling, over requisitions filled in the trailing 3 months.",days
